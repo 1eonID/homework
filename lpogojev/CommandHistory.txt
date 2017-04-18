@@ -1,0 +1,47 @@
+ 1574  git clone git@github.com:1eonID/homework.git
+ 1575  cd homework/
+ 1576  ll
+ 1577  git init
+ 1578  nano lpogojev/README.md 
+ 1579  git add lpogojev/README.md 
+ 1580  git commit -m "Edit README.md file"
+ 1581  git log
+ 1582  mkdir src
+ 1583  mkdir out
+ 1584  ll
+ 1585  rm -rf src/
+ 1586  rm -rf out/
+ 1587  ll
+ 1588  mkdir lpogojev/src
+ 1589  mkdir lpogojev/out
+ 1590  ll
+ 1591  ll *
+ 1592  touch lpogojev/src/SimpleMain.java
+ 1593  git add lpogojev/src/SimpleMain.java 
+ 1594  git commit -m "Create SimpleMain.java file"
+ 1595  ll *
+ 1596  atom lpogojev/src/SimpleMain.java 
+ 1597  cat lpogojev/src/SimpleMain.java 
+ 1598  git add lpogojev/src/SimpleMain.java 
+ 1599  git commit -m "Edit SimpleMain.java file"
+ 1600  javac -d out lpogojev/src/SimpleMain.java 
+ 1601  javac -d lpogojev/out lpogojev/src/SimpleMain.java 
+ 1602  jav -cp lpogojev/out/ SimpleMain
+ 1603  java -cp lpogojev/out/ SimpleMain
+ 1604  git commit -m "Compile SimpleMain.java file and run SimpleMain.class file"
+ 1605  git st
+ 1606  git log
+ 1607  jar -cvf app.jar -C lpogojev/out/ .
+ 1608  java -jar lpogojev/app.jar
+ 1609  java -jar app.jar
+ 1610  java -cp app.jar SimpleMain 
+ 1611  touch lpogojev/manifest.txt
+ 1612  nano lpogojev/manifest.txt 
+ 1613  git add lpogojev/manifest.txt 
+ 1614  git commit -m "Create manifest.txt file"
+ 1615  cat lpogojev/manifest.txt 
+ 1616  jar -cvfm app.jar lpogojev/manifest.txt -C lpogojev/out/ .
+ 1617  java -jar app.jar
+ 1618  git st
+ 1619  git push origin master
+
