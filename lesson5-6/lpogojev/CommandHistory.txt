@@ -1,0 +1,175 @@
+```sh
+$ mkdir lesson5-6
+```
+
+```sh
+$ cd lesson5-6/
+```
+
+```sh
+$ mkdir lpogojev
+```
+
+```sh
+$ mkdir src
+```
+
+```sh
+$ mkdir out
+```
+
+```sh
+$ nano README.md
+```
+
+```sh
+$ git add README.md
+```
+
+```sh
+$ git commit -m "Add README.md file and solve first part of homework from lesson5-6"
+[master b5dba88] Add README.md file and solve first part of homework from lesson5-6
+ 1 file changed, 20 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/README.md
+```
+
+```sh
+$ nano src/BitwiseCalc.java
+```
+
+```sh
+$ javac -d out src/BitwiseCalc.java && java -cp out BitwiseCalc
+1110 'and' 0101 = 0100
+1110 'or' 0101 = 1111
+1110 'xor' 0101 = 1011
+'not' 1110 = 0001
+```
+
+```sh
+$ git add src/BitwiseCalc.java
+```
+
+```sh
+$ git commit -m "Add and solve second part of homework from lesson5-6 (BitwiseCalc)"
+[master 9524d63] Add and solve second part of homework from lesson5-6 (BitwiseCalc)
+ 1 file changed, 62 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/src/BitwiseCalc.java
+```
+
+```sh
+$ nano src/ArraysCopier.java
+```
+
+```sh
+$ javac -d out src/ArraysCopier.java && java -cp out ArraysCopier
+[1, 2, 9, 8, 12]
+null
+[15, 21, 5, 8, 12]
+null
+[99, 99, 99, 99, 99, 99, 99, 99, 99, 99]
+[1, 2, 9, 8, 12, 15, 21, 5, 8, 12]
+```
+
+```sh
+$ git add src/ArraysCopier.java
+```
+
+```sh
+$ git commit -m "Add and solve third part of homework from lesson5-6 (ArraysCopier)"
+[master a369e30] Add and solve third part of homework from lesson5-6 (ArraysCopier)
+ 1 file changed, 49 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/src/ArraysCopier.java
+```
+
+```sh
+$ nano src/PascalTriangle.java
+```
+
+```sh
+$ javac -d out src/PascalTriangle.java && java -cp out PascalTriangle
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+    .
+   . .
+  . 2 .
+ . . . .
+. 4 6 4 .
+```
+
+```sh
+$ git add src/PascalTriangle.java
+```
+
+```sh
+$ git commit -m "Add and solve fourth part of homework from lesson5-6 (PascalTriangle)"
+[master 61af4f9] Add and solve fourth part of homework from lesson5-6 (PascalTriangle)
+ 1 file changed, 79 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/src/PascalTriangle.java
+```
+
+```sh
+$ nano src/ArraysUtils.java
+```
+
+```sh
+$ javac -d out src/ArraysUtils.java && java -cp out ArraysUtils
+true
+false
+
+[[1, 2, 3, 4, 5], [55, 44, 33, 2]]
+
+[1, 2, 3, 4, 5, 55, 44, 33, 2]
+
+[[1, 55], [2, 44], [3, 33], [4, 22], [5, 11]]
+
+1       2       3       4       5
+16      17      18      19      6
+15      24      25      20      7
+14      23      22      21      8
+13      12      11      10      9
+
+1       2       3       4       5
+55      44      33      2
+```
+
+```sh
+$ git add src/ArraysUtils.java
+```
+
+```sh
+$ git commit -m "Add and solve fourth part of homework from lesson5-6 (ArraysUtils)"
+[master e49f855] Add and solve fourth part of homework from lesson5-6 (ArraysUtils)
+ 1 file changed, 115 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/src/ArraysUtils.java
+```
+
+```sh
+$ nano src/Main.java
+```
+
+```sh
+$ javac -d out src/Main.java && java -cp out Main
+Lord of the rings: The Fellowship of the Ring, author: J. R. R. Tolkien, price: 100
+Algorithms, 4th Edition, authors: Robert Sedgewick, Kevin Wayne, price: 120
+false
+false
+J. R. R. Tolkien
+Robert Sedgewick, e-mail: rs@cs.princeton.edu
+true
+false
+```
+
+```sh
+$ git add src/Main.java
+  nano src/ArraysUtils.java
+```
+
+```sh
+$  git commit -m "Add and solve fifth part of homework from lesson5-6 (Main - Books and Authors)"
+[master fa39f17] Add and solve fifth part of homework from lesson5-6 (Main - Books and Authors)
+ 1 file changed, 96 insertions(+)
+ create mode 100644 lesson5-6/lpogojev/src/Main.java
+```
